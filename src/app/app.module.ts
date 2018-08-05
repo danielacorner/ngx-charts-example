@@ -1,14 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { CustomChartComponent } from './custom/custom.component';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomChartComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    NgxChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
